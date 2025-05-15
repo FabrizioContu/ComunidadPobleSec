@@ -1,6 +1,6 @@
 "use client";
 
-import Simulator from "./Simulator";
+import SimulatorBis from "./SimulatorBis";
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
             Comunidad Energética de Poble Sec
           </h1>
         </div>
-        <Simulator />
+        <SimulatorBis />
       </div>
     </div>
   );
