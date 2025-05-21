@@ -29,24 +29,6 @@ This project is built with:
 
 - Node.js and npm (or yarn)
 
-## Installation
-
-To run this project locally:
-
-```sh
-# Clone the repository
-git clone <REPOSITORY_URL>
-
-# Navigate to the project directory
-cd solar-panels-simulator
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
 ## Usage
 
 1. Configure the solar installation parameters (number of panels, efficiency, etc.)
