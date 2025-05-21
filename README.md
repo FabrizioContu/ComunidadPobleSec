@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Solar Panel Community Simulator
 
-Currently, two official plugins are available:
+An interactive simulator that allows users to calculate and visualize the potential of solar panel installations in communities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Solar production simulation based on technical parameters
+- Return on investment and payback period calculation
+- Comparison of different installation scenarios
+- Customizable consumption profiles
+- Responsive and user-friendly interface
+- Interactive data visualization
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+- Recharts for data visualization
+- React Router for navigation
+- React Query for data management
+
+## Requirements
+
+- Node.js and npm (or yarn)
+
+## Installation
+
+To run this project locally:
+
+```sh
+# Clone the repository
+git clone <REPOSITORY_URL>
+
+# Navigate to the project directory
+cd solar-panels-simulator
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Usage
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Configure the solar installation parameters (number of panels, efficiency, etc.)
+2. Adjust economic values (initial investment, energy price)
+3. Run the simulation to see the results
+4. Compare different scenarios to optimize your investment
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Contribution
+
+Contributions are welcome. Please open an issue first to discuss what you would like to change or improve.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
